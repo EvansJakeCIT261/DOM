@@ -3,14 +3,21 @@
 <body>
 
 <h1 id="id1">DOM - Document Markup Language</h1>
-<img id ="id2">src="48_356_10x7.jpg">
+<img src="48_356_10x7.jpg">
 <button type="button" 
 onclick="document.getElementById('id1').style.color = 'red'">
 Click Me to change Color</button>
 
-<button type="button" 
-onclick="document.getElementById('id2').images = 'Guru_meditation.gif'">
-Click Me to change Image</button>
+<button onclick="myFunction()">Image source</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.images[0].src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
 </body>
 </html>
